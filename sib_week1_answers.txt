@@ -1,3 +1,24 @@
-*** Cut and paste the for loop here ***
+Name: Patrick Kennedy
 
-*** What is the for loop doing? ***
+In ‘sib_week1_answers.txt’ respond to the following:
+
+What is a route, and how do you specify one in Flask?
+	The route is what is returned on a get request. To specify one you have to define what will be returned when the get request is received. Otherwise you end up with a 404 error.
+
+
+What is the only route we’ve specified in our application?
+	@app.route("/")
+
+
+What is the method that gets called when we hit that route?
+	def hello():
+		return "hello internet!"
+
+If I wanted to add a route at “/world” that printed “Hello, World” on the #screen, what would that code look like?
+
+	app.add_url_rule('/', view_func=View.asview('main'))
+
+
+#If I create a new application and import testingflask.py (a.k.a. I am not running it directly), will code under the ‘if __name__ == “__main__”: be executed? Why not?
+
+	I think it would be, because by importing the .py file that contains all the necessary stuff it would have also imported the 'if__name__... stuff.
